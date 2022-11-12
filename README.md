@@ -1,24 +1,22 @@
 <p align="center">
+  <a href="https://www.djangoproject.com" target="blank"><img src="https://code.djangoproject.com/raw-attachment/ticket/24953/django-hexbin.png" width="200" alt="Django Logo" /></a>
+</p>
 
-<a href="https://www.djangoproject.com" target="blank"><img src="https://code.djangoproject.com/raw-attachment/ticket/24953/django-hexbin.png" width="200" alt="Django Logo" /></a>
+<p align="center">
+
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+
+  <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+
+  <a href="#-licença">Licença</a>
 
 </p>
 
 <p align="center">
 
-<a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-
-<a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-
-<a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-
-<a href="#-licença">Licença</a>
-
-</p>
-
-<p align="center">
-
-<img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000">
 
 </p>
 
@@ -52,7 +50,7 @@ O projeto Seletive é uma ideia de aplicação desenvolvida para recrutadores e 
 
 <p align="center">
 
-<img alt="Home Page" src=".github/media/HomePage.png" width="100%">
+  <img alt="Home Page" src=".github/media/HomePage.png" width="100%">
 
 </p>
 
@@ -64,13 +62,13 @@ O projeto Seletive é uma ideia de aplicação desenvolvida para recrutadores e 
 
 <p align="center">
 
-<img alt="Vaga Page" src=".github/media/novavaga.png" width="100%">
+  <img alt="Vaga Page" src=".github/media/novavaga.png" width="100%">
 
 </p>
 
 <p align="center">
 
-<img alt="Tarefa Page" src=".github/media/tarefa.png" width="100%">
+  <img alt="Tarefa Page" src=".github/media/tarefa.png" width="100%">
 
 </p>
 
