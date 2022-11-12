@@ -1,10 +1,34 @@
-from django.shortcuts import redirect, render
+from django.shortcuts import get_object_or_404, redirect, render
 from django.contrib import messages
 from django.contrib.messages import constants
 
 from empresa.models import Empresa, Tecnologias
 
 # Create your views here.
+
+
+def empresa(request, id):
+    empresa_unica = get_object_or_404(Empresa, id=id)
+    return render(request, "empresa_unica.html", {"empresa": empresa_unica})
+
+
+def empresas(request):
+    technologias_filtrar = request.GET.get("tecnologias")
+    nome_filtrar = request.GET.get("nome")
+    empresas = empresa.objects.all()
+
+    if technologias_filtrar:
+        empresas = empresas.filter(tecnologias=technologias_filtrar)
+
+    if nome_filtrar:
+        empresas = empresas.filter(nome__icontains=nome_filtrar)
+
+    tecnologias = Tecnologias.objects.all()
+    return render(
+        request,
+        "empresas.html",
+        {"empresas": empresas, "tecnologias": tecnologias},
+    )
 
 
 def nova_empresa(request):
@@ -72,7 +96,7 @@ def empresas(request):
     tecnologias = Tecnologias.objects.all()
     return render(
         request,
-        "empresa.html",
+        "empresas.html",
         {"empresas": empresas, "tecnologias": tecnologias},
     )
 

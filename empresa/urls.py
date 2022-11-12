@@ -1,5 +1,5 @@
 from django.urls import path
-from empresa.views import nova_empresa, empresas, excluir_empresa
+from empresa.views import nova_empresa, empresas, excluir_empresa, empresa
 
 urlpatterns = [
     path("nova_empresa/", nova_empresa, name="nova_empresa"),
@@ -9,4 +9,5 @@ urlpatterns = [
         excluir_empresa,
         name="excluir_empresa",
     ),
+    path("empresa/<int:id>", empresa, name="empresa_unica"),
 ]
