@@ -65,3 +65,13 @@ def nova_empresa(request):
             request, constants.SUCCESS, "Empresa cadastrada com sucesso"
         )
         return redirect("/home/empresas")
+
+
+def empresas(request):
+    empresas = Empresa.objects.all()
+    tecnologias = Tecnologias.objects.all()
+    return render(
+        request,
+        "empresa.html",
+        {"empresas": empresas, "tecnologias": tecnologias},
+    )
