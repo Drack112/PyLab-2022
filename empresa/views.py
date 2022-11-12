@@ -27,7 +27,7 @@ def empresa(request, id):
 def empresas(request):
     technologias_filtrar = request.GET.get("tecnologias")
     nome_filtrar = request.GET.get("nome")
-    empresas = empresa.objects.all()
+    empresas = Empresa.objects.all()
 
     if technologias_filtrar:
         empresas = empresas.filter(tecnologias=technologias_filtrar)
