@@ -1,1 +1,1 @@
-CREATE DATABASE django;
+CREATE DATABASE seletive;

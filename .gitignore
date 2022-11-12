@@ -1,6 +1,7 @@
 /.vscode
 /.idea
 
+/.docker/dbdata
 /.venv
 /media
 
