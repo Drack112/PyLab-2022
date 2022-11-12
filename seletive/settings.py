@@ -1,5 +1,6 @@
 from dotenv import load_dotenv
 from pathlib import Path
+from django.contrib.messages import constants
 
 import os
 
@@ -22,6 +23,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # third party apps
     "corsheaders",
+    # My Apps
+    "empresa",
 ]
 
 MIDDLEWARE = [
@@ -102,3 +105,11 @@ MEDIA_URL = "media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+MESSAGE_TAGS = {
+    constants.DEBUG: "alert-primary",
+    constants.ERROR: "alert-danger",
+    constants.SUCCESS: "alert-success",
+    constants.INFO: "alert-info",
+    constants.WARNING: "alert-warning",
+}
